@@ -24,11 +24,11 @@ Use a genetic algorithm to evolve a population of graphs of neural network layer
 
 | Name | Role | Email | GitHub |
 |------|------|-------|--------|
-| Aili Nierengarten | Project Lead | aili.nierengarten@sjsu.edu | [@@8000thCube](https://github.com/8000thCube) |
-| Alder Wang | Project Member | [email@university.edu] | [@github-username](https://github.com/username) |
-| Aysha Mujeeb | Project Member | [email@university.edu] | [@github-username](https://github.com/username) |
+| Aili Nierengarten | Project Lead | aili.nierengarten@sjsu.edu | [@8000thCube](https://github.com/8000thCube) |
+| Alder Wang | Project Member | alder.wang@sjsu.edu | [@alderwang06](https://github.com/alderwang06) |
+| Aysha Mujeeb | Project Member | aysha.mujeeb@sjsu.edu | [@github-username](https://github.com/username) |
 | Reema Name | Project Member | [email@university.edu] | [@github-username](https://github.com/username) |
-| Thalia Hseih | Project Member | [email@university.edu] | [@github-username](https://github.com/username) |
+| Thalia Hseih | Project Member | thalia.hsieh@sjsu.edu | [@LaplaceTransfem](https://github.com/LaplaceTransfem) |
 
 ## Project Kanban Board
 
