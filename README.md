@@ -8,22 +8,15 @@
 Use a genetic algorithm to evolve a population of graphs of neural network layers to achieve the lowest training loss in a limited amount of time
 
 **Key Objectives:**
-- [Objective 1]
-- [Objective 2]
-- [Objective 3]
-- [Objective 4]
+- Represent a graph of neural network layers as a gene-like string that remains valid under simple mutation and crossover operations
+- Apply a genetic algorithm to neural network structure discovery
+- Find an interesting alternative structure a human expert would be unlikely to guess for learning some dataset
 
 ## Lead Contact Information
 
-**Project Lead:** [Lead Name]  
-📧 Email: [email@university.edu]  
-💼 LinkedIn: [LinkedIn Profile URL]  
-📱 Phone: [Phone Number]  
-🏢 Office Hours: [Days and Times], [Location]
-
-**Faculty Advisor:** [Advisor Name]  
-📧 Email: [advisor.email@university.edu]  
-🏢 Office: [Building Name, Room Number]
+**Project Lead:** Aili Nierengarten  
+📧 Email: aili.nierengarten@gmail.com
+💼 LinkedIn: https://www.linkedin.com/in/aili-nierengarten
 
 ## Contributors
 
@@ -31,10 +24,11 @@ Use a genetic algorithm to evolve a population of graphs of neural network layer
 
 | Name | Role | Email | GitHub |
 |------|------|-------|--------|
-| [Lead Name] | Project Lead & [Primary Role] | [email@university.edu] | [@github-username](https://github.com/username) |
-| [Member Name 2] | [Role] | [email@university.edu] | [@github-username](https://github.com/username) |
-| [Member Name 3] | [Role] | [email@university.edu] | [@github-username](https://github.com/username) |
-| [Member Name 4] | [Role] | [email@university.edu] | [@github-username](https://github.com/username) |
+| Aili Nierengarten | Project Lead | aili.nierengarten@sjsu.edu | [@@8000thCube](https://github.com/8000thCube) |
+| Alder Wang | Project Member | [email@university.edu] | [@github-username](https://github.com/username) |
+| Aysha Mujeeb | Project Member | [email@university.edu] | [@github-username](https://github.com/username) |
+| Reema Name | Project Member | [email@university.edu] | [@github-username](https://github.com/username) |
+| Thalia Hseih | Project Member | [email@university.edu] | [@github-username](https://github.com/username) |
 
 ## Project Kanban Board
 
