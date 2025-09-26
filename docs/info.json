@@ -1,1 +1,6 @@
-
+{
+  "project_name": "Block Evolution",
+  "purpose": "See if we can evolve any interesting new neural network structures with a genetic algorithm",
+  "short_description": "Use a genetic algorithm to evolve a population of graphs of neural network layers to achieve the lowest training loss in a limited amount of time",
+  "semester": "fa25"
+}
