@@ -1,11 +1,11 @@
-# AI/ML Club - [Project Title]
+# AI/ML Club - Block Evolution
 
 **Academic Year:** 2025-2026 Fall Semester  
 **Project Duration:** September 2025 - December 2025
 
 ## Project Description
 
-[Brief description of your project - 2-3 sentences explaining what the project aims to accomplish and its main objectives.]
+Use a genetic algorithm to evolve a population of graphs of neural network layers to achieve the lowest training loss in a limited amount of time
 
 **Key Objectives:**
 - [Objective 1]
