@@ -84,8 +84,8 @@ Use a genetic algorithm to evolve a population of graphs of neural network layer
 
 ## Technology Stack
 
-- **Programming Language:** [Primary Language]
-- **ML/AI Libraries:** [Library 1], [Library 2], [Library 3]
+- **Programming Language:** [RUST]
+- **ML/AI Libraries:** [BlockGraph], [Burn]
 - **Development:** [Development Tools]
 - **Version Control:** Git & GitHub
 - **[Category]:** [Tools/Technologies]
