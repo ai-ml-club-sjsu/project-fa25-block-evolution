@@ -26,7 +26,7 @@ Use a genetic algorithm to evolve a population of graphs of neural network layer
 |------|------|-------|--------|
 | Aili Nierengarten | Project Lead | aili.nierengarten@sjsu.edu | [@8000thCube](https://github.com/8000thCube) |
 | Alder Wang | Project Member | alder.wang@sjsu.edu | [@alderwang06](https://github.com/alderwang06) |
-| Aysha Mujeeb | Project Member | aysha.mujeeb@sjsu.edu | [@github-username](https://github.com/ayshamujeeb2007-cell) |
+| Aysha Mujeeb | Project Member | aysha.mujeeb@sjsu.edu | [ayshamujeeb2007-cell](https://github.com/ayshamujeeb2007-cell) |
 | Reema Name | Project Member | [email@university.edu] | [@github-username](https://github.com/username) |
 | Thalia Hseih | Project Member | thalia.hsieh@sjsu.edu | [@LaplaceTransfem](https://github.com/LaplaceTransfem) |
 
@@ -37,9 +37,9 @@ Use a genetic algorithm to evolve a population of graphs of neural network layer
 ## Repository Structure
 
 ```
-[project-repo-name]/
+block-evolution/
+├── Cargo.toml
 ├── README.md
-├── requirements.txt
 ├── .gitignore
 ├── LICENSE
 ├── docs/
@@ -47,54 +47,38 @@ Use a genetic algorithm to evolve a population of graphs of neural network layer
 │   ├── info.json               # Project metadata for website automation
 │   ├── thumbnail.webp          # Project thumbnail image
 │   └── pitch_slides.pdf        # Project presentation slides
-└── [additional_folder]/
+├── src/
+│   └── main.rs
 ```
 
 ## Quick Start Guide
 
 ### Prerequisites
-- Python 3.8 or higher
-- Git
-- [Additional requirement 1]
-- [Additional requirement 2]
+- Cargo
+- Rust
 
 ### Installation Guide
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/aiml-club/[repo-name].git
-   cd [repo-name]
+   git clone https://github.com/aiml-club/project-fa25-block-evolution.git
+   cd project-fa25-block-evolution
    ```
 
-2. **Create virtual environment:**
+2. **Run the program:**
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **[Additional setup step]:**
-   ```bash
-   [command or instruction]
+   cargo run --release
    ```
 
 ## Technology Stack
 
 - **Programming Language:** [RUST]
 - **ML/AI Libraries:** [BlockGraph], [Burn]
-- **Development:** [Development Tools]
-- **Version Control:** Git & GitHub
-- **[Category]:** [Tools/Technologies]
-- **Database:** [Database Technology]
-- **Deployment:** [Deployment Platform/Tools]
+- **Version Control:** GitHub
 
 ## License
 
-This project is licensed under the [License Type] License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
@@ -104,7 +88,7 @@ This project is licensed under the [License Type] License - see the [LICENSE](LI
 
 ---
 
-**Last Updated:** [Date]  
+**Last Updated:** 2025-09-27  
 **Next Review:** [Date]
 
 ---
