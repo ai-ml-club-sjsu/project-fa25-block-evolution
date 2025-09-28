@@ -1,0 +1,8 @@
+[package]
+name = "block-evolution"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+block-graph = "0.1"
+burn = { version = "0.18", features = ["fusion","ndarray","train","vision","wgpu"]}
