@@ -1,9 +1,10 @@
 // mnist example and utilities
 
 // returns a basic model with a couple linear and relu layers. by default this outputs a logits distribution, apply .soft_choose to get a model that gives numeric guesses
-pub fn basic_mnist_model()->Graph<Layer<Autodiff<Wgpu>>>{
+pub fn basic_mnist_model()->Graph<Layer<Autodiff<NdArray>>>{
 	let mut graph:Graph<Layer<A>>=Graph::new();
 
+	graph.connect("input","x").with_clear(true).with(Layer::flatten(-2..=-1));
     graph.connect("x",1_usize).with_clear(true).with(Layer::linear(true,28*28,64,1.0));
 	graph.connect(1_usize,2_usize).with_clear(true).with(Layer::relu());
 	graph.connect(2_usize,3_usize).with_clear(true).with(Layer::linear(true,64,32,1.0));
@@ -13,7 +14,7 @@ pub fn basic_mnist_model()->Graph<Layer<Autodiff<Wgpu>>>{
     graph
 }
 /// trains the model
-pub fn train_model(graph:Graph<Layer<Autodiff<Wgpu>>>)->Graph<Layer<Wgpu>>{
+pub fn train_model(graph:Graph<Layer<Autodiff<NdArray>>>)->Graph<Layer<NdArray>>{
     let batch=32;
 	let epochs=3;
 	let lr=0.001;
@@ -30,7 +31,7 @@ pub fn train_model(graph:Graph<Layer<Autodiff<Wgpu>>>)->Graph<Layer<Wgpu>>{
     graph.0
 }
 /// tests the model
-pub fn test_model(graph:&Graph<Layer<Wgpu>>){
+pub fn test_model(graph:&Graph<Layer<NdArray>>){
     let graph=Unvec(graph).soft_choose(1.0);
     let testdata=MNIST::load_validation_data();
 
@@ -38,7 +39,7 @@ pub fn test_model(graph:&Graph<Layer<Wgpu>>){
 	for n in 0..100{
 		let (testinput,testtarget)=testdata.get(n).unwrap();
 		let expectedoutput=testtarget.into_float_vec()[0] as u32;
-		let testoutput:u32=graph.forward(testinput);
+		let testoutput:u32=graph.forward(testinput.reshape([28,28]));
 
 		if expectedoutput==testoutput{k+=1}
 		println!("expected {expectedoutput}, output {testoutput}");
@@ -65,8 +66,7 @@ impl<B:Backend> Dataset < (Value<B>, Value<B>) > for MNIST { // (image, label)
 		let input = Value::from(image);
 		let target = Value::from(label);
 
-		//let input = input.reshape([28,28]);
-		let input = input.reshape([1,28*28]);
+		let input = input.reshape([1,28,28]);
 
 		Some((input, target))
 	}
@@ -76,10 +76,10 @@ impl<B:Backend> Dataset < (Value<B>, Value<B>) > for MNIST { // (image, label)
 	}
 }
 struct MNIST{inner:MnistDataset}
-type A=Autodiff<Wgpu>;
+type A=Autodiff<NdArray>;
 use block_graph::{																	// imports from block-graph
-	AI,Graph,Op,Unvec,UnwrapInner,burn::{Layer,LossOutput,Shortcuts,TrainConfig,Value}
+	AI,Graph,Op,Unvec,UnwrapInner,burn::{Layer,LossOutput,Shortcuts,TrainConfig,Value},ops::Reshape
 };
 use burn::{
-	backend::{Autodiff,Wgpu},data::dataset::{Dataset,vision::MnistDataset},module::AutodiffModule,optim::AdamWConfig,prelude::Backend
+	backend::{Autodiff,NdArray},data::dataset::{Dataset,vision::MnistDataset},module::AutodiffModule,optim::AdamWConfig,prelude::Backend
 };															// imports from burn
