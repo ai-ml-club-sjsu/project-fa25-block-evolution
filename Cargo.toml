@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-block-graph = "0.1"
+block-graph = {version = "0.2"}
 burn = { version = "0.18", features = ["fusion","ndarray","train","vision","wgpu"]}
 rmp-serde = "1.3.0"
 serde = { version = "1", features = ["derive"] }
