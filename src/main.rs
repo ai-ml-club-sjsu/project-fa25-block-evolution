@@ -10,5 +10,6 @@ fn main(){
 }
 /// load, save, and other data related utilities
 pub mod data;
+pub mod gene;
 /// mnist example and utilities
 pub mod mnist;
