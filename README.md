@@ -27,12 +27,8 @@ Use a genetic algorithm to evolve a population of graphs of neural network layer
 | Aili Nierengarten | Project Lead | aili.nierengarten@sjsu.edu | [@8000thCube](https://github.com/8000thCube) |
 | Alder Wang | Project Member | alder.wang@sjsu.edu | [@alderwang06](https://github.com/alderwang06) |
 | Aysha Mujeeb | Project Member | aysha.mujeeb@sjsu.edu | [ayshamujeeb2007-cell](https://github.com/ayshamujeeb2007-cell) |
-| Reema Name | Project Member | [email@university.edu] | [@github-username](https://github.com/username) |
+| Reema Karvir | Project Member | [reema.karvir@sjsu.edu] | [@github-username](https://github.com/username) |
 | Thalia Hseih | Project Member | thalia.hsieh@sjsu.edu | [@LaplaceTransfem](https://github.com/LaplaceTransfem) |
-
-## Project Kanban Board
-
-**🔗 Public Board:** [View our Kanban Board](https://github.com/aiml-club/[repo-name]/projects/1)
 
 ## Repository Structure
 
@@ -72,23 +68,17 @@ block-evolution/
 
 ## Technology Stack
 
-- **Programming Language:** [RUST]
-- **ML/AI Libraries:** [BlockGraph], [Burn]
+- **Programming Language:** Rust
+- **ML/AI Libraries:** block-graph, burn
 - **Version Control:** GitHub
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- [Acknowledgment 1]
-- [Acknowledgment 2]
-- [Acknowledgment 3]
-
 ---
 
-**Last Updated:** 2025-09-27  
+**Last Updated:** 2025-10-09
 **Next Review:** [Date]
 
 ---
