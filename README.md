@@ -27,7 +27,7 @@ Use a genetic algorithm to evolve a population of graphs of neural network layer
 | Aili Nierengarten | Project Lead | aili.nierengarten@sjsu.edu | [@8000thCube](https://github.com/8000thCube) |
 | Alder Wang | Project Member | alder.wang@sjsu.edu | [@alderwang06](https://github.com/alderwang06) |
 | Aysha Mujeeb | Project Member | aysha.mujeeb@sjsu.edu | [ayshamujeeb2007-cell](https://github.com/ayshamujeeb2007-cell) |
-| Reema Karvir | Project Member | [reema.karvir@sjsu.edu] | [@github-username](https://github.com/username) |
+| Reema Karvir | Project Member | reema.karvir@sjsu.edu | [@github-username](https://github.com/username) |
 | Thalia Hseih | Project Member | thalia.hsieh@sjsu.edu | [@LaplaceTransfem](https://github.com/LaplaceTransfem) |
 
 ## Repository Structure
