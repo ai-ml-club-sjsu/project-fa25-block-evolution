@@ -60,8 +60,13 @@ block-evolution/
    git clone https://github.com/aiml-club/project-fa25-block-evolution.git
    cd project-fa25-block-evolution
    ```
+2 **Make a copy of the build in the project directory:**
+   ```bash
+   cargo build --release
+   cp target/release/block-evolution ./block-evolution
+   ```
 
-2. **Run the program:**
+3. **Run the program:**
    ```bash
    cargo run --release
    ```
