@@ -18,6 +18,8 @@ impl Population{
 
 		Self{capacity,directory,genes,loss,models,program,threads,timeout}
 	}
+	pub fn genes(&self)->&Vec<Vec<u32>>{&self.genes}
+	pub fn models(&self)->&Vec<Graph<Layer<NdArray>>>{&self.models}
 	/// runs a generation of models
 	pub fn run_generation(&mut self){
 		let (directory,program,timeout)=(&self.directory,&self.program,&self.timeout);
